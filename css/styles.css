@@ -252,7 +252,7 @@ p {
     font-style: normal;
 }
 
-.nav-contacts {
+.address + .nav-contacts {
     display: none;
 
 
@@ -511,6 +511,7 @@ p {
     .feature-list-title {
         font-weight: 500;
         font-size: 20px;
+        line-height: 1.2;
     }
 }
 
@@ -783,11 +784,16 @@ p {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    row-gap: 72px;
+}
+@media only screen and (min-width: 1158px) {
+  .footer .container {
+    row-gap: 0;
+  }
 }
 
 .logo-wrapper {
     margin: 0 auto;
-    padding-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
@@ -855,7 +861,7 @@ p {
 
 .footer-caption-wrapper {
     margin: 0 auto;
-    padding-bottom: 72px;
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
