@@ -260,21 +260,30 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    .address {
+    .address{
+        display: flex;
+        align-items: center;
+    }
+    .nav-contacts {
         display: flex;
         flex-direction: column;
-        gap: 12px;
         max-width: 119px;
         margin-left: auto;
+    }
+    .nav-contacts-item:nth-child(1){
+        margin-bottom: 12px;
     }
 }
 
 @media only screen and (min-width: 1158px) {
-    .address {
+    .nav-contacts {
         gap: 40px;
         padding: 24px 0;
         max-width: 100%;
         flex-direction: row;
+    }
+    .nav-contacts-item:nth-child(1){
+        margin-bottom: 0;
     }
 }
 
