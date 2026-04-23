@@ -250,17 +250,17 @@ p {
 
 .address {
     font-style: normal;
+        display: none;
+
 }
 
 .address + .nav-contacts {
-    display: none;
 
 
 }
 
 @media only screen and (min-width: 768px) {
-    .nav-contacts {
-        display: flex;
+    .address {
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -270,7 +270,7 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
-    .nav-contacts {
+    .address {
         gap: 40px;
         padding: 24px 0;
         max-width: 100%;
